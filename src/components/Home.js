@@ -12,3 +12,5 @@ export default function Home() {
         </main>
     )
 }
+
+{/* image source: https://time.com/5259602/japanese-forest-bathing/ */}
