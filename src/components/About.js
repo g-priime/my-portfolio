@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import sanityClient from "../client.js";
-import the_wave from "../the_wave.JPG";
+import ice from "../ice10.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -25,7 +25,7 @@ export default function About() {
 
     return (
         <main className="relative">
-            <img src={the_wave} alt="wave" className="absolute w-full" />
+            <img src={ice} alt="waterfall" className="absolute w-full" />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
                     <img
