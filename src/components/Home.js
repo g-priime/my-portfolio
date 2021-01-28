@@ -13,4 +13,6 @@ export default function Home() {
     )
 }
 
-{/* image source: https://time.com/5259602/japanese-forest-bathing/ */}
+/* 
+image source: https://time.com/5259602/japanese-forest-bathing/ 
+*/
