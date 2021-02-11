@@ -26,7 +26,7 @@ export default function Project() {
                     Welcome to my projects page!
                 </h2>
                 <section className="grid grid-cols-2 gap-8">
-                    {projectData && projectData.map((project, index) => (
+                    {projectData && projectData.slice(1).map((project, index) => (
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
                             <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                                 <a
@@ -44,11 +44,11 @@ export default function Project() {
                                     {new Date(project.date).toLocaleDateString()}
                                 </span>
                                 <span>
-                                    <strong className="font-bold">Company</strong>:{" "}
+                                    <strong className="font-bold">Location</strong>:{" "}
                                     {project.place}
                                 </span>
                                 <span>
-                                    <strong className="font-bold">Type</strong>{" "}
+                                    <strong className="font-bold">Type:</strong>{" "}
                                     {project.projectType}
                                 </span>
                                 <p className="my-6 text-lg text-gray-700 leading-relaxed">
