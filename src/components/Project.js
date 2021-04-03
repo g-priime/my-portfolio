@@ -29,7 +29,7 @@ export default function Project() {
         <h2 className="text-lg text-gray-600 flex justify-left mb-12">
           Welcome to my projects page!
         </h2>
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
           {projectData &&
             projectData
               .sort((a, b) => (a.date > b.date ? 1 : -1))
