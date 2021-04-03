@@ -36,7 +36,7 @@ export default function Project() {
               .slice(1)
               .reverse()
               .map((project, index) => (
-                <article className="relative rounded-lg shadow-xl bg-white p-16">
+                <article className="relative rounded-lg shadow-xl bg-white p-2">
                   <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                     <a
                       href={project.link}
