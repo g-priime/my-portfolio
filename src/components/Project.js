@@ -48,7 +48,7 @@ export default function Project() {
                     </a>
                   </h3>
                   <div className="text-gray-500 text-xs space-x-4">
-                    <div className="grid sm:grid-cols-3">
+                    <div className="grid sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
                       <span>
                         <strong className="font-bold">Finished on</strong>:{" "}
                         {new Date(project.date).toLocaleDateString()}
