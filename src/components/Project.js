@@ -48,18 +48,20 @@ export default function Project() {
                     </a>
                   </h3>
                   <div className="text-gray-500 text-xs space-x-4">
-                    <span>
-                      <strong className="font-bold">Finished on</strong>:{" "}
-                      {new Date(project.date).toLocaleDateString()}
-                    </span>
-                    <span>
-                      <strong className="font-bold">Location</strong>:{" "}
-                      {project.place}
-                    </span>
-                    <span>
-                      <strong className="font-bold">Type:</strong>{" "}
-                      {project.projectType}
-                    </span>
+                    <div className="grid md:grid-cols-3">
+                      <span>
+                        <strong className="font-bold">Finished on</strong>:{" "}
+                        {new Date(project.date).toLocaleDateString()}
+                      </span>
+                      <span>
+                        <strong className="font-bold">Location</strong>:{" "}
+                        {project.place}
+                      </span>
+                      <span>
+                        <strong className="font-bold">Type:</strong>{" "}
+                        {project.projectType}
+                      </span>
+                    </div>
                     <p className="my-6 text-lg text-gray-700 leading-relaxed">
                       {project.description}
                     </p>
