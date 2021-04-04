@@ -36,7 +36,7 @@ export default function Project() {
               .slice(1)
               .reverse()
               .map((project, index) => (
-                <article className="relative rounded-lg shadow-xl bg-white p-2">
+                <article className="relative rounded-lg shadow-xl bg-white p-4">
                   <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                     <a
                       href={project.link}
@@ -47,7 +47,7 @@ export default function Project() {
                       {project.title}
                     </a>
                   </h3>
-                  <div className="text-gray-500 text-xs space-x-4">
+                  <div className="text-gray-500 text-xs space-x-0">
                     <div className="grid sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
                       <span>
                         <strong className="font-bold">Finished on</strong>:{" "}
