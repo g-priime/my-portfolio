@@ -56,7 +56,7 @@ export default function SinglePost() {
                     </div>
                     <img src={SinglePost.mainImage.asset.url} alt={SinglePost.title} className="w-full object-cover rounded-t" style={{ height: "400px" }} />
                 </header>
-                <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+                <div className="px-6 sm:px-16 md:px-24 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
                     <BlockContent
                         blocks={SinglePost.body}
                         projectId="py8fplf0"
