@@ -27,7 +27,7 @@ export default function About() {
         <main >
             <img src={ice} alt="waterfall" className="absolute object-cover w-full h-full" />
             <div className="p-10 lg:pt-20 container mx-auto relative">
-                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
                     <img
                         src={urlFor(author.authorImage).url()}
                         className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
