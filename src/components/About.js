@@ -4,6 +4,8 @@ import ice from "../ice10.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
+import forest from "../forest-bathing.jpg"
+
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
     return builder.image(source)
@@ -25,7 +27,7 @@ export default function About() {
 
     return (
         <main >
-            <img src={ice} alt="waterfall" className="absolute object-cover w-full h-full" />
+            <img src={forest} alt="forest" className="absolute object-cover w-full h-full" />
             <div className="pt-3 md:p-10 lg:pt-20 container mx-auto relative">
                 <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
                     <img
@@ -51,3 +53,7 @@ export default function About() {
         </main>
     )
 }
+
+/* 
+image source: https://time.com/5259602/japanese-forest-bathing/ 
+*/
