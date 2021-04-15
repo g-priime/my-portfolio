@@ -28,16 +28,16 @@ export default function About() {
         <main >
             <img src={forest} alt="forest" className="absolute object-cover w-full h-full" />
             <div className="pt-3 md:p-10 lg:pt-20 container mx-auto relative">
-                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
+                <section className="bg-red-700 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
                     <img
                         src={urlFor(author.authorImage).url()}
                         className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
                         alt={author.name}
                     />
                     <div className="text-lg flex flex-col justify-center">
-                        <h1 className="cursive text-6xl text-green-300 mb-4">
+                        <h1 className="cursive text-6xl text-gray-900 mb-4">
                             Hey there! I'm{" "}
-                            <span className="text-green-300">{author.name}</span>
+                            <span className="text-gray-900">{author.name}</span>
                         </h1>
                         <div className="prose lg:prose-xl text-white">
                             <BlockContent
