@@ -28,7 +28,7 @@ export default function About() {
         <main >
             <img src={forest} alt="forest" className="absolute object-cover w-full h-full" />
             <div className="pt-3 md:p-10 lg:pt-20 container mx-auto relative">
-                <section className="bg-red-700 bg-opacity-80 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
+                <section className="bg-gray-200 bg-opacity-100 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
                     <img
                         src={urlFor(author.authorImage).url()}
                         className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
@@ -39,7 +39,7 @@ export default function About() {
                             Hey there! I'm{" "}
                             <span className="text-gray-900">{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl text-white">
+                        <div className="prose lg:prose-xl text-gray-900">
                             <BlockContent
                                 blocks={author.bio}
                                 projectId="py8fplf0"
