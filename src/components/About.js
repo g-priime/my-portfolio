@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import sanityClient from "../client.js";
-import ice from "../ice10.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
