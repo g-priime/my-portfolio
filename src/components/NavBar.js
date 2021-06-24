@@ -49,10 +49,11 @@ export default function NavBar() {
           </div>
           <div className="inline-flex py-3 px-0 my-6">
             <SocialIcon
-              url="https://www.linkedin.com/in/levon-rose/"
+              url="https://github.com/g-priime"
               className="mr-4"
               target="_blank"
               fgColor="#fff"
+              bgColor="#6e5494"
               style={{ height: 35, width: 35 }}
             />
           </div>
