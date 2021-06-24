@@ -54,7 +54,7 @@ export default function NavBar() {
               target="_blank"
               fgColor="#fff"
               bgColor="#6e5494"
-              style={{ height: 35, width: 35 }}
+              style={{ height: 36, width: 36 }}
             />
           </div>
         </div>
