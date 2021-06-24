@@ -37,7 +37,7 @@ export default function NavBar() {
             About Me
           </NavLink>
         </nav>
-        <div>
+        <div className="flex px-3">
           <div className="inline-flex py-3 px-0 my-6">
             <SocialIcon
               url="https://www.linkedin.com/in/levon-rose/"
@@ -47,7 +47,7 @@ export default function NavBar() {
               style={{ height: 35, width: 35 }}
             />
           </div>
-          <div className="inline-flex py-3 px-3 my-6">
+          <div className="inline-flex py-3 px-0 my-6">
             <SocialIcon
               url="https://www.linkedin.com/in/levon-rose/"
               className="mr-4"
