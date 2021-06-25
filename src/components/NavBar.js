@@ -11,35 +11,36 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-0 text-yellow-400 
+            className="inflex-flex items-center py-6 pl-2 mr-0 text-yellow-400 
             hover:text-indigo-200 text-4xl font-bold cursive tracking-widest
-            sm:px-3,mr-4"
+            sm:px-3,mr-4
+            md:px-5"
           >
             Levon
           </NavLink>
           <NavLink
             to="/post"
             activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-1.5 my-6 rounded text-yellow-400 hover:text-indigo-200 sm:px-3"
+            className="inline-flex items-center text-center py-3 px-1 my-6 rounded text-yellow-400 hover:text-indigo-200 sm:px-3"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
             activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-1.5 my-6 rounded text-yellow-400 hover:text-indigo-200 sm:px-3"
+            className="inline-flex items-center text-center py-3 px-1 my-6 rounded text-yellow-400 hover:text-indigo-200 sm:px-3"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-1.5 my-6 rounded text-yellow-400 hover:text-indigo-200 sm:px-3"
+            className="inline-flex items-center text-center py-3 px-1 my-6 rounded text-yellow-400 hover:text-indigo-200 sm:px-3"
           >
             About Me
           </NavLink>
         </nav>
-        <div className="flex px-3">
+        <div className="flex pl-5 sm:px-3">
           <div className="inline-flex py-3 px-0 my-6">
             <SocialIcon
               url="https://www.linkedin.com/in/levon-rose/"
