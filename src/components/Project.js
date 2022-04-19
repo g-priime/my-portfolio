@@ -4,6 +4,13 @@ import sanityClient from "../client.js";
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
+  const reverseData = projectData && projectData
+  .sort((a, b) => (a.date > b.date ? 1 : -1))
+  .slice(2)
+  .reverse();
+  const arr1 = reverseData && reverseData.slice(0, 2);
+  const arr2 = reverseData && reverseData.slice(3, 5);
+  const displayData = arr1 && arr2 && arr1.concat(arr2);
 
   useEffect(() => {
     sanityClient
@@ -30,11 +37,8 @@ export default function Project() {
           Welcome to my projects page!
         </h2>
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projectData &&
-            projectData
-              .sort((a, b) => (a.date > b.date ? 1 : -1))
-              .slice(1)
-              .reverse()
+          {displayData &&
+            displayData
               .map((project, index) => (
                 <article className="relative rounded-lg shadow-xl bg-white p-4">
                   <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
